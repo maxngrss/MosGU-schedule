@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "MosGU schedule addition",
+  "version": "0.2",
+  "description": "Shows some additional info",
+  "action": {
+    "default_icon": "assets/icon128.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+        {
+            "matches": ["*://perscab.mosgu.ru/*"],
+            "js": ["script.js"],
+            "run_at": "document_end"
+        }
+    ],
+  "icons": {
+    "32": "assets/icon32.png",
+    "60": "assets/icon60.png",
+    "128": "assets/icon128.png"
+  }
+}
